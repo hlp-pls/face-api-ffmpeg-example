@@ -54,7 +54,8 @@ async function record() {
 
 	let canv = document.querySelector('canvas');
 	let recorder = RecordRTC(canv, {
-        type: 'canvas'
+        type: 'canvas',
+        mimeType: 'video/webm;codecs=vp8'
     });
 	/*
 	let audio_track = await navigator.mediaDevices.getUserMedia({ audio: true }).then(
