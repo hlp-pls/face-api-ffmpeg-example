@@ -95,7 +95,7 @@ async function record() {
 	    btn.textContent = 'Start recording.';
 		};
 
-    }, function(error) { log( JSON.stringify ( error ) ); });
+    }, function(error) { _log( JSON.stringify ( error ) ); });
 
 	//console.log(audio_track);
 
